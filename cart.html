@@ -1,0 +1,197 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon 2.0</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel= "stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
+        integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
+        crossorigin="anonymous">
+</script>
+</head>
+<body>
+   <div class="bg-white w-full"> 
+       
+       <div class= "header h-16 bg-gray-900 flex items-center">
+            
+            <div class = "logo w-1/5 h-16 ml-10 pt-2">
+                <img class = "w-28 h-16 object-contain "src = "https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png">
+            </div>
+            
+            <input class=" h-9 w-30 bg-gray-800 border border-gray-500 border-opacity-75 rounded-l-xl px-3 text-white ml-6 focus:outline-none placeholder-white" id="search" type="text" placeholder="Search...">
+        
+        <div class = "categories h-9 w-30 bg-gray-800 border-gray-500 border border-opacity-75 px-3 text-white flex items-center ">
+            Categories
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>  
+        </div>
+        <div class = "search-icon h-9 w-10 bg-yellow-500 rounded-r-xl flex justify-center items-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+        </div>
+        <!-- Right Icons-->
+        <div class = "icons text-white flex items-center ml-auto mr-8 w-48 h-16 justify-around">
+            <svg class = "h-5 w-5"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+        <div class ="cart-icon h-10 w-10 bg-yellow-500 flex items-center justify-center rounded-xl">
+            <svg class ="h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+        </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+             </svg>
+             <svg class = "h-12 w-12 rounded" data-jdenticon-value = "Navier"></svg>
+        </div>
+    </div>
+        <div class ="main h-screen flex">
+            <div class = " main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6">
+                <div class = "side-bar-categories ">
+                    <div class = "sidebar-main-category text-yellow-500 cursor-pointer flex font-bold bg-gray-700 rounded-lg mb-1 p-2">
+                       <span class= "w-8"> 
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                          </svg>
+                       </span>
+                        <span>Categories</span>
+                    </div>
+                    <div class = "sidebar-main-category-echo text-white cursor-pointer flex mb-2 p-2">
+                        <span class = "w-8 "></span>
+                        <span>Echo and Alexa</span>
+                    </div>
+                    <div class = "sidebar-main-category-kindle text-white cursor-pointer flex mb-2 p-2">
+                        <span class = "w-8 "></span>
+                        <span>Kindle</span>
+                    </div>
+                    <div class = "sidebar-main-category-books text-white cursor-pointer flex mb-2 p-2">
+                        <span class = "w-8 "></span>
+                        <span>Books</span>
+                    </div>
+                    <div class = "sidebar-main-category-Electronics text-white cursor-pointer flex mb-2 p-2">
+                        <span class = "w-8 "></span>
+                        <span>Electronics</span>
+                    </div>
+                    <div class = "sidebar-main-category-home-garden text-white cursor-pointer flex mb-2 p-2 ">
+                        <span class = "w-8 "></span>
+                        <span>Home and Garden</span>
+                    </div>
+                    <div class = "sidebar-main-category-fashion text-white cursor-pointer flex mb-2 p-2 ">
+                        <span class = "w-8 "></span>
+                        <span>Fashion</span>
+                    </div>
+                    <div class = "sidebar-main-category-sell text-white cursor-pointer flex mb-2 p-2 hover:bg-gray-700 rounded-xl mb-5">
+                        <span class = "w-8 ">
+                            <svg class="w-3 h-3 mt-2 mx-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="percent" class="svg-inline--fa fa-percent" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z"></path></svg>
+                        </span>
+                        <span>Sell on Amazon</span>
+                    </div>
+                    <div class = "sidebar-main-category-help text-white cursor-pointer flex mb-2 p-2 hover:bg-gray-700 rounded-xl">
+                        <span class = "w-8 ">
+                            <svg class = "w-5 h-5 mt-1" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </span>
+                        <span>Help</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class = "main-section flex-1 p-6 bg-white-100 ">
+                <h1 class = "font-bold text-gray-400 text-3xl mb-6">Shopping Cart</h1>
+                <div class = "font-bold text-gray-400 table-titles flex  ">
+                    <h2 class="flex-grow">product</h2>  
+                    <h2 class=" w-48">Count</h2> 
+                    <h2 class="w-48">Total Cost</h2> 
+                    <span class="w-10"></span>  
+
+                </div>
+                <div class="cart-items mt-5">
+                    <div class="cart-item flex items-center pb-4 border-b border-gray-100">
+                        <div class="cart-item-img w-40 h-24 bg-white p-4 rounded-lg">
+                            <img class="w-full h-full object-contain" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202206?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653493200207" alt="Apple Macbook Pro 16'">
+                        </div>
+                        <div class="cart-item-details flex-grow">
+                            <div class="cart-item-title font-bold text-sm text-gray-600">
+                                Apple Macbook Pro 16
+                            </div>
+                            <div class="cart-item-brand text-sm text-gray-400">
+                                Apple
+                            </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div class="chevron-left cursor-pointer text-gray-400 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 mr-2">
+                                <i class="fas fa-chevron-left fa-sm"></i>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div class="chevron-right cursor-pointer text-gray-400 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 ml-2">
+                                <i class="fas fa-chevron-right fa-sm"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold text-gray-400"> $1,400.00</div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400 ">
+                           <i class="fas fa-times"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cart-item-2 flex items-center pb-4 border-b border-gray-100">
+                        <div class="cart-item-img w-40 h-24 bg-white p-4 rounded-lg">
+                            <img class="w-full h-full object-contain" src="https://gmedia.playstation.com/is/image/SIEPDC/console-right_@1x?fmt=png-alpha&scl=1" alt="Apple Macbook Pro 16'">
+                        </div>
+                        <div class="cart-item-details flex-grow">
+                            <div class="cart-item-title font-bold text-sm text-gray-600">
+                                PlayStation 5 Digital
+                            </div>
+                            <div class="cart-item-brand text-sm text-gray-400">
+                                Sony
+                            </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div class="chevron-left cursor-pointer text-gray-400 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 mr-2">
+                                <i class="fas fa-chevron-left fa-sm"></i>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div class="chevron-right cursor-pointer text-gray-400 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 ml-2">
+                                <i class="fas fa-chevron-right fa-sm"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold text-gray-400"> $399.00</div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400 ">
+                           <i class="fas fa-times"></i>
+                        </div>
+
+                    </div>
+                    
+                    
+                  
+                </div>
+                <div class = "complete-order flex justify-end mt-10">
+                    <div class="total-cost">
+                        <h2 class="text-gray-400">Total Cost</h2>
+                        <div class="total-cost-number font-bold mr-7 text-lg text-gray-500"> 
+                            $1,799.00
+                        </div>
+                    </div>
+                    <div class="complete-order-button cursor-pointer w-56 flex items-center justify-center bg-yellow-500 rounded text-white hover:bg-yellow-600">
+                        Complete Order
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   </div>
+  
+  
+</body>
+</html>
